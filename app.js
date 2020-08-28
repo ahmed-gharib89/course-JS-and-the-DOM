@@ -8,8 +8,8 @@ document.body.addEventListener('keypress', function(){
 });
 
 const myCustomDiv = document.createElement('div');
-function respondToClick(){
-    console.log('A paragraph was clicked.');
+function respondToClick(evt){
+    console.log('A paragraph was clicked: ' + evt.target.textContent);
 };
 
 for (let i=1; i<=200; i++){
